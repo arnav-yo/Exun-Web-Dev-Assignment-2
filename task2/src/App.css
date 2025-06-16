@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height:10dvh;
+  color: white;
+}
+
+.nav-logo h1{
+  background-image: linear-gradient(to right, rgb(165, 23, 204), rgba(75, 50, 180,0.8));
+  background-position: 0% 100%;
+  background-size: 0% 2px;
+  color: white;
+  transition: background-size 0.3s var(--cubic-bezier);
+  text-decoration: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+.nav-logo {
+  text-decoration: none;
+}
+.nav-logo:hover h1{
+  background-size: 100% 2px;
+}
+
+.main {
+  background-color: #191b1c;
+}
+

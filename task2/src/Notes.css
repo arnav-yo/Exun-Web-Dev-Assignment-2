@@ -1,0 +1,97 @@
+.notes-page-wrapper h3 {
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.add-note-btn{
+    width:10%;
+    display: block;
+    margin:auto;
+    padding: 10px;
+    border-radius: 0.75em;    
+    font-family: var(--font);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--opborder);
+     background-image: linear-gradient(to right, rgba(165, 23, 204, 0.7), rgba(75, 50, 180, 0.7));
+    background-size: 0% 100%;
+    cursor: pointer;
+    transition: background-size 0.5s ease-in-out;
+     background-repeat: no-repeat;
+}
+
+.add-note-btn:hover {
+    background-size: 100% 100%;
+}
+
+.notes-page-wrapper > a{
+    text-decoration: none;
+}
+
+.notes-page-wrapper {
+    min-height: 90dvh;
+    padding-bottom: 20px;
+}
+
+.note-wrapper span {
+    color: white;
+}
+.note-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+/* .note {
+    background-color: white;
+    color: black;
+    margin: 50px;
+    width: 1%;
+    text-align: center;
+    padding: 20px 40px;
+    height:10%;
+    border-radius: 10px;
+    font-family: var(--font); 
+} */
+
+.note {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffffb1;
+    color: black;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    padding-bottom: 0.7rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc((100% - 1rem) / 3);
+     /* max-width: calc((100% - 1rem) / 3); */
+    /* box-shadow: var(--box-shadow); */
+    min-width: 270px; 
+    border: 1px solid var(--opborder);
+    transition: transform 0.3s ease-in-out;
+}
+
+.note:hover {
+    transform: scale(1.05);
+}
+.note-description {
+    padding-bottom: 20px;
+}
+.delete-note {
+    border-radius: 1rem;
+    padding: 20px;
+    font-family: var(--font);
+    cursor: pointer;
+    /* position: relative;
+    bottom: 20px; */
+    margin-top: auto;
+    box-shadow: var(--box-shadow);
+}
+
+.trash-icon {
+    padding-right: 10px;
+}
